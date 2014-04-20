@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  project_name: MyString
+  customer_id: 1
+  contact_id: 1
+  start_date: 2014-04-19 19:20:12
+  end_date: 2014-04-19 19:20:12
+  notes: MyText
+
+two:
+  project_name: MyString
+  customer_id: 1
+  contact_id: 1
+  start_date: 2014-04-19 19:20:12
+  end_date: 2014-04-19 19:20:12
+  notes: MyText

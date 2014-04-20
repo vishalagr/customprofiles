@@ -1,0 +1,33 @@
+<h2>Welcome back, <%= current_user.first_name %> </h2>
+<div align="right">
+    <h4>Last logged in on: <%= current_user.last_sign_in_at %></h4>
+</div>
+
+
+<h3>Current Projects:</h3>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Project #</th>
+      <th>Project Name </th>
+      <th>Customer </th>
+      <th>Contact</th>
+      <th>Total Logs</th>
+      <th>Download Logs</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+         <td><%=  project.id %></td> 
+         <td><%= project.project_name %></td>
+        <td><%= project.customer.business_name %></td>
+        <td><%= project.contact.title %></td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
