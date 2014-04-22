@@ -28,6 +28,8 @@ GEM
       activesupport (= 4.0.0)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
+    activerecord-postgresql-adapter (0.0.1)
+      pg
     activesupport (4.0.0)
       i18n (~> 0.6, >= 0.6.4)
       minitest (~> 4.2)
@@ -69,6 +71,7 @@ GEM
     multi_json (1.9.2)
     mysql2 (0.3.15)
     orm_adapter (0.5.0)
+    pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -128,11 +131,13 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_otp
+  activerecord-postgresql-adapter
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
+  pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc
